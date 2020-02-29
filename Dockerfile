@@ -6,7 +6,10 @@ FROM golang:1.13-alpine as build
 # args
 ARG version="1.0.4"
 # add plugin import paths here separated by commas
-ARG plugins=""
+# http.expires github.com/epicagency/caddy-expires.git
+# http.filter github.com/echocat/caddy-filter.git
+# tls.dns.cloudflare github.com/caddyserver/dnsproviders.git
+ARG plugins="github.com/epicagency/caddy-expires.git,github.com/echocat/caddy-filter.git,github.com/caddyserver/dnsproviders.git"
 ARG telemetry="true"
 
 # build root
