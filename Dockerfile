@@ -50,4 +50,4 @@ VOLUME /etc/.caddy
 WORKDIR /srv
 EXPOSE 2015
 
-ENTRYPOINT ["/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]
+ENTRYPOINT ["/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout", "--agree", "--email", "domain4hs@gmail.com"]
