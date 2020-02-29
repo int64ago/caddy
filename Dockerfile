@@ -9,7 +9,7 @@ ARG version="1.0.4"
 # http.expires github.com/epicagency/caddy-expires.git
 # http.filter github.com/echocat/caddy-filter.git
 ARG plugins="github.com/epicagency/caddy-expires,github.com/echocat/caddy-filter"
-ARG telemetry="true"
+ARG telemetry="false"
 
 # build root
 WORKDIR /build
